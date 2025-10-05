@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NimTash - Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="education">
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutMe.html">AboutMe</a></li>
+      <li><a href="education.html" class="active">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="education-section">
+    
+    <div class="edu-item fade-in">
+      <div class="edu-card">
+        <div class="edu-img">
+          <img src="tokshimang.jpg" alt="Tokshimang Primary School">
+        </div>
+        <div class="edu-text">
+          <h3>Tokshimang Primary School (PP - 6)</h3>
+          <p>This is where my learning journey began. I learned the importance of discipline, respect, and good habits. My teachers encouraged curiosity, which made me eager to ask questions and explore new things. The school also helped me build a strong foundation in reading, writing, and numbers, while shaping my love for learning that still guides me today.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-item fade-in reverse">
+      <div class="edu-card">
+        <div class="edu-img">
+          <img src="dungtse.jpg" alt="Dungtse Central School">
+        </div>
+        <div class="edu-text">
+          <h3>Dungtse Central School (7 - 10)</h3>
+          <p>At this school, I gained more than just academic knowledge. I learned to think critically and solve problems in different ways. Group projects and class activities taught me how to work well with others, share ideas, and respect teamwork. I also became more confident in expressing myself, whether through presentations, discussions, or school events.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-item fade-in">
+      <div class="edu-card">
+        <div class="edu-img">
+          <img src="jscs.jpg" alt="Jigme Sherubling Central School">
+        </div>
+        <div class="edu-text">
+          <h3>Jigme Sherubling Central School (11 - 12)</h3>
+          <p>These years were very important for me. I studied advanced subjects that gave me a strong base for higher studies. I learned self-discipline, responsibility, and how to manage my time well. The school also gave me chances to take part in different activities, which helped me grow in confidence. Most importantly, my passion for technology became stronger here, guiding me toward the path I want to follow in the future.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-item fade-in reverse">
+      <div class="edu-card">
+        <div class="edu-img">
+          <img src="sce.jpg" alt="Samtse College of Education">
+        </div>
+        <div class="edu-text">
+          <h3>BE.d IT - Samtse College of Education (2022 - Present)</h3>
+          <p>My journey at Samtse College of Education has been both challenging and inspiring. I am strengthening my knowledge in Information Technology, focusing on areas like web development, programming, and creative digital tools. The college also provides opportunities to improve my teaching skills, teamwork, leadership, and communication. These experiences are shaping me not only as an IT professional but also as an educator who can guide and inspire others. I am preparing myself to contribute meaningfully to both education and the field of technology in the future.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 NimTash. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeItems = document.querySelectorAll('.fade-in');
+
+    const fadeOnScroll = () => {
+      fadeItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeOnScroll);
+    window.addEventListener('load', fadeOnScroll);
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
