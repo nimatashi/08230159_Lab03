@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutMe - NimTash</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline fixes for About Me text */
+    .about-content {
+      max-width: 700px; 
+      margin: 0 auto; 
+      text-align: center;
+      padding: 0 10px; 
+    }
+
+    .about-content p {
+      font-size: 0.8em; 
+      line-height: 1.5; 
+      margin-bottom: 15px;
+      white-space: normal; 
+      word-wrap: break-word; /* prevent overflow */
+    }
+
+    .about-content h1 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #00796b;
+    }
+
+    @media screen and (max-width: 768px) {
+      .about-content {
+        max-width: 95%;
+        padding: 0 5px;
+      }
+    }
+  </style>
+</head>
+<body class="about">
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutMe.html" class="active">AboutMe</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+  <section class="about-section">
+    <div class="images-container">
+      <img src="about.jpg" alt="pic 1" class="fade-in">
+      <img src="v.jpg" alt="pic 2" class="fade-in">
+    </div>
+
+    <div class="about-content">
+      <h1>About Me</h1>
+      <p class="fade-in">
+        Hi, I'm <b>Nima Tashi</b>! I am an IT student who loves creating websites and exploring new technologies. I enjoy combining curiosity and creativity to bring ideas to life through coding. Outside of school, I love watching anime, reading manga, sketching characters, and swimming, which helps me relax and stay active. My dream is to build digital spaces that feel lively and fun, just like the worlds I enjoy in anime ✨.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 NimTash. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transition = 'opacity 1s ease';
+    });
+    window.addEventListener('load', () => {
+      fadeElements.forEach((el, i) => {
+        setTimeout(() => el.style.opacity = 1, i * 300);
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
